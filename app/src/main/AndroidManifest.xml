@@ -13,17 +13,16 @@
         android:theme="@style/Theme.AnalysedTasks"
         tools:targetApi="31">
         <activity
-            android:name=".ui.theme.MainActivity"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
+            android:exported="false" />
+        <activity android:name=".Screen_one"
             android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.AnalysedTasks">
+            android:theme="@style/Theme.AppCompat"
+            >
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.MAIN"/>
             </intent-filter>
         </activity>
     </application>

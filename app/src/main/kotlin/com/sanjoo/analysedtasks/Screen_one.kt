@@ -1,12 +1,11 @@
-package com.sanjoo.analysedtasks.ui.theme
+package com.sanjoo.analysedtasks
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.sanjoo.analysedtasks.R
 
-class MainActivity : AppCompatActivity() {
+class Screen_one : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_screen_one)
     }
 }
