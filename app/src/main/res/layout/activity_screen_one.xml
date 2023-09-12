@@ -4,14 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Screen_one">
+    tools:theme="@style/Theme.AnalysedTasksDarkTheme">
 
     <TextView
         android:id="@+id/consultation_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="CONSULTATION"
-        android:textColor="@color/black"
         android:textStyle="bold"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"

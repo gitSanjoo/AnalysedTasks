@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.AnalysedTasks" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme.AnalysedTasksLightTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:colorPrimary">#AF9797</item>
+        <item name="android:colorAccent">#7FAF95</item>
+        <item name="android:colorBackground">#88A8B6</item>
+        <item name="background">@color/white</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+    <style name="Theme.AnalysedTasksDarkTheme" parent="Theme.AppCompat.NoActionBar">
+
+        <item name="android:colorPrimary">#635151</item>
+        <item name="android:colorAccent">#3A5346</item>
+        <item name="android:colorBackground">#324249</item>
+        <item name="backgroundColor">#858484</item>
+        <item name="android:windowBackground">#858282</item>
+    </style>
 
 </resources>
