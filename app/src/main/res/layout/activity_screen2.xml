@@ -127,7 +127,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
             android:alpha="0.8"
-            app:cardBackgroundColor="#085E0C"
+            app:cardBackgroundColor=""
             app:cardCornerRadius="10dp"
             app:cardElevation="0dp"
             app:contentPadding="7dp"
@@ -156,6 +156,18 @@
                     android:textSize="20sp"
                     app:layout_constraintStart_toEndOf="@+id/s2_im2"
                     app:layout_constraintTop_toTopOf="parent" />
+                <!-- Auto layout, variables, and unit scale are not yet supported -->
+                <RelativeLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/frame"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginTop="34dp"
+                    android:background="@drawable/heartshape"
+                    android:clipToOutline="true"
+                    />
 
                 <TextView
                     android:layout_width="wrap_content"
