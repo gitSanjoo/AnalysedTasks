@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ScreenThree">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/s3_dinner"
+        app:layout_constraintBottom_toBottomOf="@+id/s3_dinner"
+        android:src="@drawable/frame"/>
+    <TextView
+        android:id="@+id/s3_dinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dinner"
+        android:textColor="#E39C35"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+<SearchView
+    android:id="@+id/s3_search"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+    android:layout_margin="20dp"
+    android:queryHint="search for food item.... "
+    android:iconifiedByDefault="false"
+    android:clickable="true"
+    android:layout_marginBottom="20dp"
+    android:background="@drawable/search_corner"
+        app:layout_constraintTop_toBottomOf="@+id/s3_dinner">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="search here"/>
+</SearchView>
+    <Button
+        android:id="@+id/s3_btn1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="FREQUENT"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/s3_btn2"
+        app:layout_constraintTop_toBottomOf="@+id/s3_search"/>
+
+    <Button
+        android:id="@+id/s3_btn2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="RECENT"
+        android:background="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/s3_btn1"
+        app:layout_constraintEnd_toStartOf="@+id/s3_btn3"
+        app:layout_constraintTop_toBottomOf="@+id/s3_search"/>
+
+    <Button
+        android:id="@+id/s3_btn3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="FAVOURITE"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:background="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintStart_toEndOf="@+id/s3_btn2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/s3_search"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/s3_rv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/s3_btn2"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
