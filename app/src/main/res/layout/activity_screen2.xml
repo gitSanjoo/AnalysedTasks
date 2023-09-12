@@ -21,16 +21,21 @@
         android:text="hii..  john"
         android:textColor="@color/black"
         android:textStyle="bold"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintBottom_toTopOf="@+id/s2_date"
+        />
     <TextView
+        android:id="@+id/s2_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="12/07/2023"
+        android:textSize="20sp"
         android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/s2_name"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -40,11 +45,10 @@
         android:text="fitness track"
         android:textColor="#0B8291"/>
     <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:src="@drawable/background_consultancy"
         android:scaleType="fitXY"/>
 
